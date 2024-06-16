@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-  background: url('https://github-production-user-asset-6210df.s3.amazonaws.com/55605395/340077265-85386044-8159-4fba-b4c8-0770e1797e73.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240616%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240616T083554Z&X-Amz-Expires=300&X-Amz-Signature=eb6d60dade3df3bf6e187459bc36544c643458de7a372051f1a95bfcfba5b701&X-Amz-SignedHeaders=host&actor_id=55605395&key_id=0&repo_id=815762092');
+  background: url(img/bg2.png);
   color: #000000;
   position: sticky;
   top: 0;
