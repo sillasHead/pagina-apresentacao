@@ -267,6 +267,9 @@ body {
 
 div:has(> .avatar) {
   color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &:hover {
     color: black;
@@ -277,6 +280,7 @@ div:has(> .avatar) {
     position: relative;
     top: 25%;
     font-weight: bold;
+    white-space: nowrap;
   }
 
   & p {
