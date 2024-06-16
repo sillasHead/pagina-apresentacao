@@ -35,7 +35,7 @@ function sendEmail() {
         message: message,
         toEmail: 'evolution.tech.requisicoes@gmail.com',
     }
-    const serviceId = 'service_enhp7do'
+    const serviceId = 'service_j28i2z4'
     const templateId = 'template_ftsktdp'
 
     // Envia o email usando o serviço de emailjs
