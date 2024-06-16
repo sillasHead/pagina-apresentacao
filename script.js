@@ -16,7 +16,6 @@ function initContactForm() {
 
 // Função para enviar o email
 function sendEmail() {
-    debugger
     const name = document.querySelector('#name')?.value?.trim()
     const email = document.querySelector('#email')?.value?.trim()
     const message = document.querySelector('#message')?.value?.trim()
