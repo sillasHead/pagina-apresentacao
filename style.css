@@ -10,11 +10,12 @@ body {
   line-height: 1.6;
 }
 #header {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background: url(/img/bg2.png);
   color: #000000;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 9999;
 }
 #header .navbar-brand {
   font-weight: bold;
@@ -98,7 +99,7 @@ body {
     transform: rotate(90deg);
     font-size: 75px;
     font-family: monospace;
-    color: black;
+    color: white;
     text-decoration: none;
     letter-spacing: 0px;
 
@@ -288,4 +289,9 @@ div:has(> .avatar) {
     top: 20%;
     white-space: nowrap;
   }
+}
+
+#hero, .down {
+  background-color: #050505;
+  color: white;
 }

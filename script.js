@@ -62,7 +62,7 @@ const intersectionCallback = (entries) => {
             const classList = el.classList
             const slowClass = `slower-${index+1}`
             
-            if (classList.value.includes('slower')) {
+            if (!classList.value.includes('slower')) {
                 classList.remove(slowClass)
             } else {
                 classList.add(slowClass)
