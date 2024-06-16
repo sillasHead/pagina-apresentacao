@@ -1,3 +1,4 @@
+/* style.css */
 html {
   scroll-behavior: smooth;
 }
@@ -12,12 +13,11 @@ body {
 }
 
 #header {
-  /* background-color: #f8f9fa; */
-  background: url(/img/bg2.png);
+  background: url('https://github-production-user-asset-6210df.s3.amazonaws.com/55605395/340077265-85386044-8159-4fba-b4c8-0770e1797e73.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240616%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240616T083554Z&X-Amz-Expires=300&X-Amz-Signature=eb6d60dade3df3bf6e187459bc36544c643458de7a372051f1a95bfcfba5b701&X-Amz-SignedHeaders=host&actor_id=55605395&key_id=0&repo_id=815762092');
   color: #000000;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  /* z-index: 3; */
 }
 
 #header .navbar-brand {
@@ -26,7 +26,7 @@ body {
 
   & img {
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 99999px;
   }
   & img:hover {
     box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.25);
@@ -324,6 +324,32 @@ div:has(> .avatar) {
   color: white;
 }
 
-#success, #error {
-  z-index: 9999;
+.toast-success {
+  background-color: #28a745;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.toast-error {
+  background-color: #dc3545;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.toast-warning {
+  background-color: #ffc107;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
 }
