@@ -9,14 +9,9 @@ function initContactForm() {
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault() // Evita o envio padrão do formulário
 
-            alert('entrou aqui')
-            // sendEmail(); // Chama a função para enviar o email
+            sendEmail(); // Chama a função para enviar o email
         })
     }
-}
-
-function test() {
-    alert('teste')
 }
 
 // Função para enviar o email
@@ -35,11 +30,11 @@ function sendEmail() {
     // Inicializa o serviço de emailjs com a chave do usuário
     emailjs.init('hGZHQkdsEc-XQL7pP')
     const params = {
-        subject: 'Título teste',
+        subject: 'Solicitação de orçamento',
         fromEmail: email,
         fromName: name,
         message: message,
-        toEmail: 'sillas.ap16@gmail.com',
+        toEmail: 'evolution.tech.requisicoes@gmail.com',
     }
     const serviceId = 'service_enhp7do'
     const templateId = 'template_ftsktdp'

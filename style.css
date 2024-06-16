@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #fcf8f8;
@@ -9,6 +10,7 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+
 #header {
   /* background-color: #f8f9fa; */
   background: url(/img/bg2.png);
@@ -17,9 +19,21 @@ body {
   top: 0;
   z-index: 9999;
 }
+
 #header .navbar-brand {
   font-weight: bold;
+  cursor: default;
+
+  & img {
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  & img:hover {
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.25);
+    transition: 0.5s;
+  }
 }
+
 #hero {
   background-image: url('background-color: #343a40');
   background-size: cover;
@@ -29,45 +43,55 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 #hero h1 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 30px;
 }
+
 #hero p {
   font-size: 20px;
   margin-bottom: 30px;
 }
+
 #services, #portfolio, #team, #contact, #partners {
   padding: 150px 0;
   text-align: center;
   min-height: 690px;
 }
+
 #services h2, #portfolio h2, #team h2, #contact h2, #partners h2 {
   margin-bottom: 50px;
   font-weight: bold;
 }
+
 #services h3, #portfolio h3, #team h3 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
 #services p, #portfolio p, #team p {
   font-size: 18px;
   margin-bottom: 40px;
 }
+
 #footer {
   background-color: #343a40;
   color: #ece8e8;
   padding: 30px 0;
   text-align: center;
 }
+
 #footer p {
   margin: 0;
 }
+
 #portfolio img {
   height: 200px;
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 1rem;
@@ -75,25 +99,25 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border: 3px solid white;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .down {
   display: flex;
   justify-content: center;
   animation: down 2s infinite;
-  
+
   & a {
     display: block;
     transform: rotate(90deg);
@@ -113,13 +137,15 @@ body {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(30px);
   }
+
   100% {
     transform: translateY(0);
   }
-  
+
 }
 
 .toShow {
@@ -162,7 +188,7 @@ body {
     width: 0
   }
 }
-    
+
 @keyframes blink {
   50% {
     border-color: transparent
@@ -203,7 +229,7 @@ body {
     gap: 100px;
     animation: scroll 25s linear infinite;
   }
-  
+
   & .slide {
     height: 200px;
     width: 250px;
@@ -221,6 +247,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-150px * 9));
   }
@@ -260,7 +287,8 @@ body {
 }
 
 @supports selector(:has(+ *)) {
-  .avatar:hover + .avatar,
+
+  .avatar:hover+.avatar,
   .avatar:has(+ .avatar:hover) {
     scale: 1.5;
   }
@@ -294,4 +322,8 @@ div:has(> .avatar) {
 #hero, .down {
   background-color: #050505;
   color: white;
+}
+
+#success, #error {
+  z-index: 9999;
 }
